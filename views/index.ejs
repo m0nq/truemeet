@@ -1,6 +1,23 @@
-<% include header %>
+<!DOCTYPE html>
+<html>
+  <head>
+    <% include partials/template/head.ejs %>
+  </head>
+  <body>
+    <% include partials/template/header.ejs %>
 
-  <h1><%-title %></h1>
-  <p>Welcome to <%-title %></p>
+    <section class="layout">
+      <div class="primary">
+        <div>
+          <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita temporibus alias sunt. Ipsa ab tempore quas, iusto, consectetur vel, veniam asperiores accusantium illum provident expedita magni fugit quam a tempora.</div>
+        </div>
+      </div><!-- primary -->
+      <aside class="secondary">
+        <div>Laudantium amet, cumque, fugiat ea ipsum, deserunt necessitatibus quod corporis inventore, et quae. Ullam totam, recusandae praesentium? Sunt similique soluta voluptate quo nemo facilis saepe enim ex delectus, repellat est!</div>
+      </aside><!-- seondary -->
+    </section>
 
-<% include footer %>
+    <% include partials/template/footer.ejs %>
+    <% include partials/template/jsdefaults.ejs %>
+  </body>
+</html>
