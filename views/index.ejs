@@ -5,18 +5,18 @@
   </head>
   <body>
     <% include partials/template/header.ejs %>
-
+    <% include partials/content/speakerslist.ejs %>
     <section class="layout">
       <div class="primary">
-        <div>
-          <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita temporibus alias sunt. Ipsa ab tempore quas, iusto, consectetur vel, veniam asperiores accusantium illum provident expedita magni fugit quam a tempora.</div>
-        </div>
+        <% include partials/content/whoarewe.ejs %>
+        <% include partials/content/getbusy.ejs %>
+        <% include partials/content/whoshouldcome.ejs %>
       </div><!-- primary -->
       <aside class="secondary">
-        <div>Laudantium amet, cumque, fugiat ea ipsum, deserunt necessitatibus quod corporis inventore, et quae. Ullam totam, recusandae praesentium? Sunt similique soluta voluptate quo nemo facilis saepe enim ex delectus, repellat est!</div>
+        <% include partials/content/nextmeeting.ejs %>
+        <% include partials/content/artworklist.ejs %>
       </aside><!-- seondary -->
     </section><!-- layout -->
-
     <% include partials/template/footer.ejs %>
     <% include partials/template/jsdefaults.ejs %>
     <script src="https://use.fontawesome.com/de8ba3f6ac.js"></script>
