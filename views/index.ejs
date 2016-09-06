@@ -1,30 +1,30 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <% include partials/template/head.ejs %>
+    <%- include('partials/template/head.ejs') %>
   </head>
   <body>
 
-    <% include partials/template/header.ejs %>
+    <%- include('partials/template/header.ejs') %>
 
-    <% include partials/content/speakerslist.ejs %>
+    <%- include('partials/content/speakerslist.ejs') %>
 
     <section class="layout">
       <div class="primary">
-        <% include partials/content/whoarewe.ejs %>
-        <% include partials/content/getbusy.ejs %>
-        <% include partials/content/whoshouldcome.ejs %>
+        <%- include('partials/content/whoarewe.ejs') %>
+        <%- include('partials/content/getbusy.ejs') %>
+        <%- include('partials/content/whoshouldcome.ejs') %>
       </div><!-- div.primary -->
 
       <aside class="secondary">
-        <% include partials/content/nextmeeting.ejs %>
-        <% include partials/content/artworklist.ejs %>
+        <%- include('partials/content/nextmeeting.ejs') %>
+        <%- include('partials/content/artworklist.ejs') %>
       </aside><!-- aside.seondary -->
     </section><!-- section.layout -->
 
-    <% include partials/template/footer.ejs %>
+    <%- include('partials/template/footer.ejs') %>
 
-    <% include partials/template/jsdefaults.ejs %>
+    <%- include('partials/template/jsdefaults.ejs') %>
 
     <script src="https://use.fontawesome.com/de8ba3f6ac.js"></script>
   </body>
