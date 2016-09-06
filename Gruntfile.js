@@ -3,6 +3,8 @@
 var request = require('request');
 
 module.exports = function (grunt) {
+  // node debugger
+  grunt.loadNpmTasks('grunt-node-inspector');
   // show elapsed time at the end
   require('time-grunt')(grunt);
   // load all grunt tasks
@@ -11,6 +13,9 @@ module.exports = function (grunt) {
   var reloadPort = 35729, files;
 
   grunt.initConfig({
+    'node-inspector': {
+      dev: {}
+    },
     pkg: grunt.file.readJSON('package.json'),
     develop: {
       server: {

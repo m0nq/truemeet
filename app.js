@@ -1,4 +1,4 @@
-
+// EXPRESS CONFIGURATION
 
 var express = require('express');
 var path = require('path');
@@ -26,6 +26,8 @@ app.use(bodyParser.urlencoded({
 }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
+
+app.locals.appdata = require('./data.json');
 
 app.use('/', routes);
 
