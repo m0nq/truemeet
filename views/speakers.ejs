@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <%- include('partials/template/head.ejs') %>
+  </head>
+  <body>
+
+    <%- include('partials/template/header.ejs') %>
+
+
+    <section class="layout">
+      <div class="primary">
+        <%- include('partials/content/speakerslist.ejs') %>
+      </div><!-- div.primary -->
+
+      <aside class="secondary">
+        <%- include('partials/content/nextmeeting.ejs') %>
+        <%- include('partials/content/artworklist.ejs') %>
+      </aside><!-- aside.seondary -->
+    </section><!-- section.layout -->
+
+    <%- include('partials/template/footer.ejs') %>
+
+    <%- include('partials/template/jsdefaults.ejs') %>
+
+    <script src="https://use.fontawesome.com/de8ba3f6ac.js"></script>
+  </body>
+</html>
