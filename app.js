@@ -27,6 +27,7 @@ app.use(bodyParser.urlencoded({
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
+// makes the model globally available
 app.locals.appdata = require('./data.json');
 
 app.use('/', routes);
