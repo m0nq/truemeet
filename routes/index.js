@@ -13,7 +13,8 @@ router.get('/', function(req, res) {
   res.render('index', {
     title: 'Home',
     artwork: myArtwork,
-    artists: myArtists
+    artists: myArtists,
+    page: 'home'
   });
 });
 
@@ -28,11 +29,12 @@ router.get('/speakers', function(req, res) {
   res.render('speakers', {
     title: 'Speakers',
     artwork: myArtwork,
-    artists: myArtists
+    artists: myArtists,
+    page: 'artistList'
   });
 });
 
-/* GET speakers page. */
+/* GET speakers detail page. */
 router.get('/speakers/:speakerid', function(req, res) {
   var myArtwork = [];
   var myArtists = [];
@@ -45,7 +47,8 @@ router.get('/speakers/:speakerid', function(req, res) {
   res.render('speakers', {
     title: 'Speakers',
     artwork: myArtwork,
-    artists: myArtists
+    artists: myArtists,
+    page: 'artistDetail'
   });
 });
 
