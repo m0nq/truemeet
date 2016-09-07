@@ -1,13 +1,4 @@
-<<<<<<< HEAD
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-}
 
-a {
-  color: #00B7FF;
-}
-=======
 @import url("http://fonts.googleapis.com/css?family=Bree+Serif|Merriweather:400,300,700,900");
 
 html, body, div, span, applet, object, iframe,
@@ -428,4 +419,3 @@ header .navigation ul.nav li:hover a {
     padding-right: 0;
   }
 }
->>>>>>> development

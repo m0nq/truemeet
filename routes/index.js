@@ -1,12 +1,5 @@
 var express = require('express');
 var router = express.Router();
-<<<<<<< HEAD
-
-/* GET home page. */
-
-router.get('/', function(req, res) {
-  res.render('index', { title: 'Express' });
-=======
 var appdata = require('../data.json');
 
 /* GET home page. */
@@ -57,7 +50,6 @@ router.get('/speakers/:speakerid', function(req, res) {
     artists: myArtists,
     page: 'artistDetail'
   });
->>>>>>> development
 });
 
 module.exports = router;
