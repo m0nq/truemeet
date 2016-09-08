@@ -1,4 +1,7 @@
-@import url("http://fonts.googleapis.com/css?family=Bree+Serif|Merriweather:400,300,700,900");
+
+/*@import url("http://fonts.googleapis.com/css?family=Bree+Serif|Merriweather:400,300,700,900");*/
+@import url("https://fonts.googleapis.com/css?family=PT+Serif");
+@import url('https://fonts.googleapis.com/css?family=PT+Sans|PT+Serif');
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -57,7 +60,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 
 body {
-  font-family: Merriweather, serif;
+  font-family: 'PT Sans', sans-serif;
   font-size: 1.2rem;
   line-height: 160%;
   background: #eae3cb;
@@ -65,7 +68,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: Bree Serif, serif;
+  font-family: 'PT Serif', serif;
   font-weight: normal;
   color: #475b62;
   text-shadow: #fcf4dc 1px 1px;
@@ -77,6 +80,13 @@ h1 {
   margin-bottom: .4rem;
   border-bottom: 1px solid #819090;
   padding-top: 10px;
+}
+
+h1#true-logo {
+  border: none;
+  color: #eae3cb;
+  text-decoration: none;
+  text-shadow: #1f7f9e 1px 1px;
 }
 
 h2 {
@@ -107,6 +117,14 @@ p {
 .small {
   font-size: 1rem;
   color: #2176c7;
+}
+
+#cirquitree-center {
+  text-align: center;
+  font-size: .8rem;
+  padding-top: 30px;
+  margin-bottom: -60px;
+  vertical-align: text-bottom;
 }
 
 * {
